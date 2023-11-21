@@ -1,0 +1,199 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "Shop_floor_portalShop_floor_portal",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZODATA_TH_SFP_PROD_ORDERS_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_TH_SFP_PROD_ORDERS_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			},
+			"ZODATA_TH_SFP_PLANNED_ORDER_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_TH_SFP_PLANNED_ORDER_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZODATA_TH_SFP_PLANNED_ORDER_SRV/metadata.xml"
+				}
+			},
+			"ZODATA_TH_SFP_LOGIN_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_TH_SFP_LOGIN_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZODATA_TH_SFP_LOGIN_SRV/metadata.xml"
+				}
+			},
+			"ZODATA_TH_SFP_PLAN_ORDER_SRV": {
+				"uri": "/sap/opu/odata/sap/ZODATA_TH_SFP_PLAN_ORDER_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZODATA_TH_SFP_PLAN_ORDER_SRV/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "Shop_floor_portalShop_floor_portal.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "Shop_floor_portalShop_floor_portal.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"viewPath": "Shop_floor_portalShop_floor_portal.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"routerClass": "sap.m.routing.Router",
+				"clearControlAggregation": false,
+				"viewLevel": 1,
+				"async": true
+			},
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View1",
+					"viewLevel": 1
+				},
+				"View2": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View2"
+				},
+				"View3": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View3"
+				},
+				"View4": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View4"
+				},
+				"View5": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "View5"
+				}
+			},
+			"routes": [
+				{
+					"name": "View1",
+					"pattern": "View1",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"View1"
+					]
+				},
+				{
+					"name": "View2",
+					"pattern": "View2",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"View2"
+					]
+				},
+				{
+					"name": "View3",
+					"pattern": "View3",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"View3"
+					]
+				},
+				{
+					"name": "View4",
+					"pattern": "View4",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"View4"
+					]
+				},
+				{
+					"name": "View5",
+					"pattern": "View5",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"View5"
+					]
+				}
+			]
+		}
+	}
+}

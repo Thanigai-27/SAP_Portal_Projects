@@ -1,0 +1,55 @@
+.body {
+    background-color: #afe9f1;
+    min-height: 100vh;
+}
+.h1 {
+  font-size: 40px;
+  font-weight: 60;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.con {
+    width:100%;
+    height:500px;
+    background-color:green;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.st {
+    float:left;
+    width:280px;
+    height:260px;
+    background-color:white;
+    border:solid black;
+    margin-left: 20px;
+    background-image: url("https://i0.wp.com/www.technosap.com/wp-content/uploads/2012/09/sap-trasnport-request.jpg?fit=224%2C166&ssl=1");
+     display: inline-flex;
+	align-items: flex-end;
+	
+
+}
+
+Button:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+  }
+.nd {
+    float:left;
+    width:280px;
+    height:260px;
+    background-color:white;
+    border:solid black;
+    margin-left:40px;
+    background-image: url("https://www.fujitsu.com/global/imagesgig5/fig_peo01_E_tcm100-6487636_tcm100-2750236-32.png");
+	 display: inline-flex;
+	align-items: flex-end;
+
+}

@@ -1,0 +1,22 @@
+<mvc:View controllerName="Shop_floor_portalShop_floor_portal.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page title="Shop Floor Portal">
+				<content>
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center" class="body">
+						<items>
+					<Label text="User Credentials" class="h1"></Label>
+					<Input id="user" placeholder="User ID"></Input>
+					<Input id="pass" placeholder="Password"></Input>
+					<Button press="Onclick" text="Login"></Button>
+					
+					</items>
+					</VBox>
+						
+						
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

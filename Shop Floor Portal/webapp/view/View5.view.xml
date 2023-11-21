@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="Shop_floor_portalShop_floor_portal.controller.View5" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="Dashboard" class="body">
+					<headerContent>
+					<Button id="_IDGenButton3" icon="sap-icon://log" tooltip="Dashboard" text="Log Out" press="back"/>
+				</headerContent>
+				<content>
+					<HBox alignItems="Center" alignContent="Center" fitContainer="true" class="con">
+					<items>
+					<Button press="Onclick" text="Planned Order" class="st"></Button>
+					<Button press="Onpress" text="Production Order" class="nd"></Button>
+					</items>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

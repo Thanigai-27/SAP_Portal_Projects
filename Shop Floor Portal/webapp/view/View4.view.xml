@@ -1,0 +1,58 @@
+<mvc:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="Shop_floor_portalShop_floor_portal.controller.View4"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			
+			<Page title="PRODUCTION ORDER">
+					<headerContent>
+					<Button id="_IDGenButton3" icon="sap-icon://sys-back" tooltip="Dashboard" text="Back" press="back"/>
+				</headerContent>
+				<content>
+					<Input id="fromdate" type="Date" placeholder="fromdate" width="100%"/>
+					<Input id="todate" type="Date" placeholder="todate" width="100%"/> <Button press="onSubmit" text="Submit"/>
+					<VBox alignItems="Center" alignContent="Center" fitContainer="true">
+						<items>
+							<Table id="Productionorder" items="{/results}">
+								<columns>
+									<Column>
+										<Text text="Order No."></Text>
+									</Column>
+									<Column>
+										<Text text="Material"></Text>
+									</Column>
+									<Column>
+										<Text text="Production Info"></Text>
+									</Column>
+									<Column>
+										<Text text="Total Price"></Text>
+									</Column>
+									<Column>
+										<Text text="Customs Duty Rate"></Text>
+									</Column>
+									<Column>
+										<Text text="Date"></Text>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="{Aufnr}"></Text>
+											<Text text="{Matnr}"></Text>
+											<Text text="{Posnr}"></Text>
+											<Text text="{Psmng}"></Text>
+											<Text text="{Dauty}"></Text>
+											<Text text="{Strmp}"></Text>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+
+		</pages>
+	</App>
+</mvc:View>
