@@ -1,0 +1,63 @@
+<body>
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="margin-left: 5px;font-weight: bolder;font-style: oblique;color:palevioletred ;">Vendor Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link"  href="#" routerLink="/dashboard" style="font-weight: bolder;">Dashboard </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link"  href="#" routerLink="/finance">Financial Sheet<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#"  routerLink="/profile">View Profile</a>
+            </li>
+          </ul>
+          
+        </div>
+        <a class="nav-link" href="#" style="margin-right: 20px;">Log out
+          <i class="fa fa-sign-out"></i>
+          </a>
+      </nav>
+    </header>
+    
+    <h1 class="display-6" style="text-align: center;margin-top: 10px;;">RECEIPT</h1>
+      <div class="div-3">
+          <table id="users" class="table table-bordered">
+            <thead>
+           <tr id="header"><th *ngFor ="let column of header">{{column}}   </th></tr>
+            </thead>
+            <tbody>
+           <tr *ngFor ="let value of ven['Envelope']['Body']['ZFM_VEN_RECEIPT_T.Response']['HEADER_RESULT']['item']">           
+            <td>{{value.INV_DOC_NO}}</td>
+            <td>{{value.FISC_YEAR}}</td>
+            <td>{{value.DOC_DATE}}</td>
+            <td>{{value.COMP_CODE}}</td>
+            <td>{{value.GROSS_AMNT}}</td>
+            <td>{{value.CURRENCY}}</td>
+            
+            </tr>  
+            </tbody>    
+              </table>
+              
+      </div>
+     
+      <footer class="bg-light text-center text-lg-start">
+        
+        <div class="text-center p-3" style="background-color:rgba(47, 250, 11, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="#">kaartech.com</a>
+        </div>
+        
+      </footer>
+      
+      
+</body>
+
+ 
+

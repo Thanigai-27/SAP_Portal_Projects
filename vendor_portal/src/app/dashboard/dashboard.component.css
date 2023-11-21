@@ -1,0 +1,49 @@
+body {
+    background-color: #afe9f1;
+    width: 100vw;
+    min-height: 100vh;
+}
+.container {
+    width:1000px;
+    height:500px;
+    background-color:green;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: 50px;
+}
+ #st-box {
+    float:left;
+    width:280px;
+    height:260px;
+    background-color:white;
+    border:solid black;
+    margin-left: 20px;
+    
+    
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+  }
+#nd-box {
+    float:left;
+    width:280px;
+    height:260px;
+    background-color:white;
+    border:solid black;
+    margin-left:40px;
+}
+#rd-box {
+    float:right;
+    width:280px;
+    height:260px;
+    background-color:white;
+    border:solid black;
+    margin-right: 40px;
+}
+h1 {
+    text-align: center;
+    color:Green;
+}

@@ -1,0 +1,60 @@
+<body>
+<header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="margin-left: 5px;font-weight: bolder;font-style: oblique;color:palevioletred ;">Vendor Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link"  href="#" routerLink="/dashboard" style="font-weight: bold;">Dashboard <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link"  href="#" routerLink="/finance">Financial Sheet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#" routerLink="/profile">View Profile</a>
+            </li>
+          </ul>
+          
+        </div>
+        <a class="nav-link" href="#" style="margin-right: 20px;">Log out
+          <i class="fa fa-sign-out"></i>
+          </a>
+      </nav>
+    </header>
+    <div class="sidebar" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEX////+/v7R3/EAlt8IneAXcMUOidQQh9MJmt4JmN0KltwNjNYLlNsSf84QhNEYbcPK2e4AXLsaaMAAUbgbZL4VdcgTfMwNpOIAgdAAe84AdcoAcMcAbMUAZsIAkt3v+PzU6PbJ4fOCrNsAYb6+4vbI5PVMmNbp8flRis5gjs694PU0qeNdtudNod2Xyeuo0O261u9mm9VShsywx+c9r+WGye6t3PPo9fvT7fhtv+ub0vBMq+RcsOSBwOmTyOs1n95cpNw7kNRrqNyItuGeweWIsd49hs5tn9eBp9m2zOmYtN09eca7zenJgpzxAAAJwElEQVR4nO2bDVPiOheADyAtlFKBhW5bCq3bK/i5it67un5cRVldV///77lJWyBNUlqwvDPvzHmcZVaSnOTJSZNSdgEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBNmM4wrHcFj5+58f11elOVfXf938PNaGpCCN+lcBsdKOWClkp0Y7XRE9g+HRasPb2g5DrfL155EXFiwMo3re/s3JV62+I6PyQ4z7d42rpF2njsG7uj66+efkuKbxjfLwV0YOWcNa5fjGY+VY6EiOfhJJYRS1HUntmwpvuC+Pu5hD8K5vTnYyJPnSWqYg3NZrc7SdH6UUvcVISvsn9UotiXYvNoIrja+VbsiIemfHlXotP/VMwaVhvfLTyxpDOIqrf+p1ZhD1+lA2dviZVKzrmYZx/P1jnQ3Pxoh+W75Vr2QLwq1WD9G0Hyvzxw7CO44bRS1vpbV+VBY1avSlksswjH9WZ+OzQbjf8gjCra5R9J28AyBD2K+EbTQ6L5o2vJG1hKsdjQxUWyDNdEoH18dD2pRpHXVVT0TUtIxdlDXUa37+/uFBZ3rR9WtpU7gfsoNZx7AE3l2ysQy9kksQTnWN/DTW6f6sEXYwF7xL2Xv3h7pOy2lV8rOOIVG8HUaN9eglChRGinvWs87BpSGhIV1oaZ3rCUhH8nqlWqLeOpNIe3nQV5Mzg8SQzPTwdp3pvW8kBPW0HRj+TVRczzBaAukM82YwMmzkvwhL4Cd7bkgOw7jmlfIJwxKcJCaIN8wtCKeNYSPlSpJ3fNcg95A6/aEJHKrpswMPwwX6UFnX0FOihosIbLD8gsSwoezJTmwW5u0jtZGgnj5uOGPrSgzF8InSu0YKQ2MNQWpYF68kAP/7yelD7eH27v77kV+aDwNKD8nO1O8rDD22pmgIfsjYW4RPFu8baYrrCBJDRVyk4D8aqhINTFUN9eGefuCgBd/5Xlfd6cGdwsyFaKgYFLXxcH8uCUM24yIE4VQxzoSu9xQlGVM19HufzjT3vmR22DhHzHwYouFwHkVV9TMxjXDPXRFx7fUEqaG4VzyoioCqnh7BvZF80zpfaehpi5oNQ7jaocFEMiQr6YzrLYxjrSlIDJUrLjZ4ViMRdOGj8/2lHobzLCzHuMqQ/sUSjh3Ys+ha4uZ0XUE4VQXDEpxKJi/KY/J343n1CQB7y0CWxJANpypjfqbHCr+WVPV8XUEYGRJDv2GoeRBGLc5Vel1qOIeqWPy2DN6UKY/+sr6g1JAoas0cgsaIH5Ow4P+1chmG0R6FcYy4iTY2ECSGkp2GHFD3hpWZR3HW77jrEvzFTEkMlWQPI2EUp8kK1iaCxFDsOlS8elaaxmqaXMrAa/KzRQY5rywzjFHD1ym/yOEx0d1mgjCyTPltCX0qRAqtdEGLX1awZ8/4t87MuLa5wjAKJ+ZwxPa+oSAJIgx02UPJn01tO03S5g9DeLKnfAjPntcWDdVEZPNJqMAaNjcUpIbKVSkNcqPhf586psVh0BeTv+g8xbKEZfpkRtWlhqTIiAIaYgWyly57dDYVhFHTEnKRdCR34c9T22zyljZ/GJJFaonLlLwZVRcNDTZmcyRchmNrUcHeWJAYNpvCJS5anj9ZdjOJLaTr2W6awgHiKXF1mWGMRf8IWzqU7aio2TQ3F4SRSToX7r0lkuNvzYSjOeWrlKYklincmTzbmYakVBV3dDhbdPgJwdBQHJbc8ckxmTEJ65FOedPhZwv8VMOmbVJsxzFmso9P32LDTyzR0JCStU5jR18h1+P8R0jWjBba/I4YppZ04YiGpyPK4/ObL/++RDFpP83NN5mQaTiPzmMeRVKHpDHC5i84sreHoWw+GzAL24iG7JMSWWd7/ainzwnGwzKdUY6vZeiYZrGiIxyGfjSgvlAwNlMMM/p6tIsQjHNIBjDN90gRzkJF20hJldmTHNz2BoYwduKZLMiQXO+zXF8+wYzmyhE94ki2KZS89TcxnDjRivi0Yc+e038p53GEkUPqCoeh50ZRTFfcUhwafT1DaNFGn88gwIHTW9If+dk7Dnik5otgMevHQZxvQtkT6WQ9Qxg3e71CBOGgx+I4o/PV33TT3p/7ff4wpJmdBxHt99w1DcGj4QoRTOaQOvZfnsew+uv8cc8Vn6kwK0FYwaWX9QwBJmRFFHANygzpCPujGZVM/0JiMpHsJsv2wvMpkvVev5XbkGSQRHOLEYSDqmDY61XdwWiWcqNBRzB7ExwmS8Pqi/Apwe/33LyGAOVmcRlMMQwl3YOZL3cEX1ik3tR1+0612quShsINXQkOq24533kL41+uU6BgqmEo6Uzk54fkCbzn/5m8kLvIl8NfZU9scOnmyiHxm/VcutLfihKEg36qIXHsuwc5PnZEY5t/PQWSSYFxVg4hbFh+7blVshLc4gSJYXUlbs7VNbdLK5kMxDjsOEpeeTZxBtFoitpkIsPd1YZV9yW34Cr3ViCsUvgW8/t1cmC6A3c+lCIzyBjupqkO8m/zKww98TqEvhuz67K9Fyu4MHQnLwO5YyGGJXgVDVNmtFjBueFuz4NZT+ZIS4owLAtP9KAnm9KiBeGALBDC4BfZzEqz90H0K0Mg3IJuhic+S6vyfREKXqJLwx49FAC8j0N3wFp2gt/FCEqQGRYvGBvSFIadkiP38vd7ENMeTFo5/01mMYaFL1HCRSeMvDzXyXulcbn1Rjgve9vzkxm2tyAYGQZ/EiJM8fb8qGGHy2CRB33CsDP41Ha5aVvOsLONJRoadjpcCtcl/N8L3OBzPfDZ7bBsSRAuBp3Obs676xQODy/HyX8HB+OP19fsBz4Jw2BLgtTwcymEcTAIgurF65/Lj1ar9XH55/WgNwgGg8xpSxhuZZOJDLud6qdSCH8COsJulxwuIUG3Gw45806BNdxaBqnhOimUfPKjcySje5htuGi5rWswMuy+5T0UAC7Fz3jjQCrYyd6glzkMLrcnSDMQHJYh195Xmojphlk7xbAtPK7im3a6274GY8NO0L5oZT8HhlanLV6x8C5fpGSZXuQ03K4gNewS2u+zVc+BSZF/2A7ESwvG7W5MZ/ESE2QsU4gqb3WJhoYx7S451kBmSd/7OAyCbvtDbH/Z7qbRbmX03flfCMJFsJzzdvfi28dYqOJ9/H6nZ0C3Qw+8JOX3IE2wS65voX4CatjetiC8txN8+fKle/GbHt5lAj2/J1Xy3rKUp70KSX2u7ZftXoOUsoRklraKuGIQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEGQ/3v+A48Sb/ejpHKRAAAAAElFTkSuQmCC);">
+      
+</div>
+    <h1 class="display-6" style="text-align: center;margin-top: 20px;;">QUOTATION</h1>
+      <div class="div-3">
+    
+    
+          <table id="users" class="table table-bordered">
+            <thead>
+           <tr id="header"><th *ngFor ="let column of header">{{column}}   </th></tr>
+            </thead>
+            <tbody>
+           <tr *ngFor ="let value of ven['Envelope']['Body']['ZFM_VEN_QUOTATION_T.Response']['IT_RFQ_LIST']['item']">           
+            <td>{{value.PO_NUMBER}}</td>
+            <td>{{value.CREATED_ON}}</td>
+            <td>{{value.CREATED_BY}}</td>
+            <td>{{value.VEND_NAME}}</td>
+            <td>{{value.ITEM_INTVL}}</td>
+            
+            </tr>  
+            </tbody>    
+              </table>
+      </div>
+      
+      <footer class="bg-info text-center text-lg-start fixed-bottom">
+        
+        <div class="text-center p-3" style="background-color:rgba(47, 250, 11, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="#">kaartech.com</a>
+        </div>   
+      </footer>
+</body> 
+  

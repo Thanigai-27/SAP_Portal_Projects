@@ -1,0 +1,25 @@
+body {
+    background-color: #afe9f1;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+.div-3 {
+     background-color: rgb(210, 245, 245);
+    height:auto;
+    width: 1000px;
+    margin: auto;
+     width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+  table, th, td {
+    border: 1px solid;
+    border-color: black;
+  } 
+
+  
