@@ -1,0 +1,79 @@
+<body>
+  <header>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Customer Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" routerLink="/dashboard">Dashboard <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="/financial">Financial Sheet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/profile">View Profile</a>
+      </li>
+    </ul>
+  </div>
+  <a class="nav-link" href="#">Log out
+  <i class="fa fa-sign-out"></i>
+  </a>
+</nav>
+</header>
+
+
+  
+    
+<h1 class="display-6" style="text-align: center;margin-top: 10px;;">Financial Sheet</h1>
+         
+        <div class="container">
+            
+            <div id="st-box" class="zoom">
+              <a href="#" routerLink="/invoice">
+                <img src=
+"https://cdn3.geckoandfly.com/wp-content/uploads/2019/06/530-invoice-templates.jpg
+                "style="width:280px; height:260px;">
+              </a>
+            </div>
+            
+            <div id="nd-box"  class="zoom">
+             
+                 <a href="#" routerLink="/payment">
+                
+                <img src=
+"https://www.digitaloutlook.com.au/wp-content/uploads/2017/09/future_payment_methods-compressor-1.jpg
+                "style="width:280px; height:260px;">
+            
+            </a>
+            </div>
+            
+            <div id="rd-box" class="zoom">
+              <a href="#" routerLink="/memo"> 
+                <img src=
+"https://keydifferences.com/wp-content/uploads/2015/08/Debit-Note-Vs-Credit-Note2.jpg
+                "style="width:280px; height:260px;">
+              </a>
+            </div>
+            
+            <div class="btn"  style="margin-top: 30px;margin-left: 40%;">
+              <mat-card-actions style="display: flex;flex-direction: column;max-height:30ex;">
+              <button mat-button color=black; style="background-color:rgb(180, 241, 12);"(click)="direct()">Overall Sales data
+          
+              </button></mat-card-actions>
+          
+          </div>
+        </div>
+        <footer class="bg-info text-center text-lg-start fixed-bottom">
+        
+          <div class="text-center p-3" style="background-color:rgba(27, 166, 191, 0.2)">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">kaartech.com</a>
+          </div>   
+        </footer>    
+
+</body>
+
